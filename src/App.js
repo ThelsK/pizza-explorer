@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import PizzaListContainer from "./components/PizzaList/PizzaListContainer.js"
+import PizzaDetailsContainer from "./components/PizzaDetails/PizzaDetailsContainer.js"
+import AddPizzaFormContainer from "./components/AddPizzaForm/AddPizzaFormContainer.js"
+import AddIngredientFormContainer from "./components/AddIngredientForm/AddIngredientFormContainer.js"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PizzaListContainer />
+      <PizzaDetailsContainer />
+      <AddPizzaFormContainer />
+      <AddIngredientFormContainer />
     </div>
-  );
+  )
 }
 
 export default App;
